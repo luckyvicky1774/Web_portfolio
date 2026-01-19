@@ -1,0 +1,198 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header,
+main,
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* education */
+.education {
+    margin-top: 3rem;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.edu-main h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.degree {
+    margin: 0.25rem 0;
+}
+
+.gpa {
+    font-style: italic;
+    color: #666;
+}
+
+.edu-date {
+    font-weight: 500;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* project */
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card>div:first-of-type {
+    flex: 1;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+}
+
+/* experience */
+.experience {
+    margin-top: 3rem;
+}
+
+.exp-item {
+    margin-bottom: 2rem;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.exp-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.company {
+    display: block;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.exp-date {
+    white-space: nowrap;
+    font-weight: 500;
+    color: #555;
+}
+
+.exp-highlights {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.exp-highlights li {
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 640px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card .img-div {
+        max-width: 40%;
+    }
+}
